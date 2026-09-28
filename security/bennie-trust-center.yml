@@ -1,0 +1,14 @@
+generated: '2026-09-27'
+method: searched
+probe: true
+source: https://trust.bennie.com/
+url: https://trust.bennie.com/
+certifications:
+- SOC 2
+- HIPAA
+evidence:
+- source: https://trust.bennie.com/
+  keywords:
+  - soc 2
+  - hipaa
+  - trust center

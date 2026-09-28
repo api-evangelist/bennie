@@ -1,23 +1,86 @@
 aid: bennie
+
 name: Bennie
-description: 'Bennie is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bennie.com/hubfs/assets/images/logos/featured-image@2x.jpg
+
+description: 'Bennie provides modern, cost-effective employee benefits through a top‑rated app and brokerage platform. It offers consulting, health plans, business insurance, and a seamless digital experience for employers and employees. Bennie partners with leading providers to deliver self‑funded health plans, P&C coverage, and HR technology solutions, aiming to reimagine the employee experience.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bennie/refs/heads/main/apis.yml
+
+website: https://www.bennie.com
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Benefits
+- HRTech
+- SaaS
+- Insurance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Compliance
+  url: https://trust.bennie.com/
+- type: WellKnown
+  url: well-known/bennie-well-known.yml
+- type: Hosts
+  url: hosts/bennie-hosts.yml
+- type: Vendors
+  url: vendors/bennie-vendors.yml
+- type: Security
+  url: https://www.bennie.com/security
+- type: Leadership
+  url: https://www.bennie.com/leadership
+- type: TrustCenter
+  url: security/bennie-trust-center.yml
+- type: DomainSecurity
+  url: security/bennie-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.bennie.com
+- type: DeveloperPortal
+  url: https://login.bennie.com/signin
+- type: GettingStarted
+  url: https://www.bennie.com/about-us
+- type: Support
+  url: https://www.bennie.com/contact-us
+- type: Blog
+  url: https://bennie-6093715.hs-sites.com/blog
+- type: TermsOfService
+  url: https://www.bennie.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.bennie.com/privacy-policy
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: API spec URLs on portal.bennie.com return HTML pages rendered by JavaScript, not machine‑readable OpenAPI documents.
+  evidence:
+    - url: https://portal.bennie.com/openapi.json
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

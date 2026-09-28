@@ -1,0 +1,48 @@
+generated: '2026-09-27'
+method: searched
+source: https://www.bennie.com/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: privacy-policy
+        http_status: 200
+        fetched: "true"
+        url: https://www.bennie.com/privacy-policy
+        section: "EUROPEAN UNION, UNITED KINGDOM, AND SWISS DATA SUBJECT RIGHTS"
+        quote: "EU and UK data subjects have certain rights with respect to Personal Data. For more information about these rights or to submit a request, please email us at support@bennie.com."
+        note: Provides mechanism for data subject requests via email.
+  data_retention:
+    evidence:
+      - source: privacy-policy
+        http_status: 200
+        fetched: "true"
+        url: https://www.bennie.com/privacy-policy
+        section: null
+        quote: "We will keep Personal Information for as long as it remains necessary for the identified purpose or as required by law, which may extend beyond the termination of our relationship with you."
+        note: States retention period based on purpose and legal requirements.
+  incident_notification:
+    evidence: []
+  subprocessors:
+    evidence: []
+  ai_transparency:
+    evidence: []
+  data_residency:
+    evidence: []
+  global_privacy_control:
+    evidence: []
+  exit_assistance:
+    evidence: []
+  notice_and_action:
+    evidence: []
+  accessibility_conformance:
+    evidence: []
+  support_lifetime:
+    evidence: []
+  age_assurance:
+    evidence: []
+  sbom:
+    evidence: []
+  training_data_summary:
+    evidence: []
+  transparency_report:
+    evidence: []

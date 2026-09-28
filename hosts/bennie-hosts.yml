@@ -1,0 +1,117 @@
+generated: '2026-09-27'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 6
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - other
+  - portal
+  - website
+hosts:
+- host: api.bennie.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: bennie.com
+  role: api
+  relation: own
+- host: api.hs-sites.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: hs-sites.com
+  role: api
+  relation: other-domain
+- host: app.bennie.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: bennie.com
+  role: other
+  relation: own
+- host: bennie-6093715.hs-sites.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: hs-sites.com
+  role: marketing
+  relation: other-domain
+- host: login.bennie.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  - identity
+  vendor: okta
+  registrable_domain: bennie.com
+  role: portal
+  relation: own
+- host: portal.bennie.com
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: bennie.com
+  role: other
+  relation: own
+- host: trust.bennie.com
+  found_by:
+  - pointer
+  types:
+  - Compliance
+  serves: []
+  registrable_domain: bennie.com
+  role: other
+  relation: own
+- host: www.bennie.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - Leadership
+  - Website
+  - GettingStarted
+  - Support
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: bennie.com
+  role: website
+  relation: own
