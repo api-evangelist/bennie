@@ -21,7 +21,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-27'
 
-modified: '2026-09-27'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -45,6 +45,10 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.bennie.com/blog
+  type: Blog
+- url: https://www.bennie.com/blog/rss.xml
+  type: BlogRSS
 - type: Compliance
   url: https://trust.bennie.com/
 - type: WellKnown
